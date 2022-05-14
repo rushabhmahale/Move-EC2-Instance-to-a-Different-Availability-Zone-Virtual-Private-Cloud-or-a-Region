@@ -33,6 +33,9 @@ Amazon cloud computing resources are hosted in multiple locations world-wide. Th
  ![image](https://user-images.githubusercontent.com/63963025/168439465-4e5b8ced-7f48-43a6-85bd-a9d0b3c6b65b.png)
  ![image](https://user-images.githubusercontent.com/63963025/168439489-7c88aeb2-eb04-4125-bbd6-cedc5a4e5fb0.png)
 
+- Configure Route table 
+![image](https://user-images.githubusercontent.com/63963025/168441127-8c1ddd56-eba2-44b5-91d1-0543621c3a6c.png)
+
 - Lets create another VPC in different region here iam using eu-west-1 (ireland) you can use different region as you wish 
 ![image](https://user-images.githubusercontent.com/63963025/168439736-99a606f7-ef15-41ed-977e-27bf88ad2ca9.png)
 
@@ -68,7 +71,7 @@ Amazon cloud computing resources are hosted in multiple locations world-wide. Th
 ![image](https://user-images.githubusercontent.com/63963025/168440504-421a58e4-fe32-44a7-9034-8555c558142d.png)
 
 - Storage Default 
-- Advanced details --> User data (refer to this doc:-https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html)
+- Advanced details --> User data 
 ![image](https://user-images.githubusercontent.com/63963025/168440605-7e62744a-ff56-4c1a-b262-3c5933943330.png)
 - Its same as in GCP there is Metadata and inside that Metadata there is option call Startup-script 
 ```
@@ -81,7 +84,12 @@ systemctl start httpd
 systemctl enable httpd
 echo "<h1>Hello Guys from $(hostname -f)</h1>" > /var/www/html/index.html
 ```
+## User data
+Specify user data to provide commands or a command script to run when you launch your instance.
+- refer to this doc:-https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html
 
+- you should this kind of webapge 
+![image](https://user-images.githubusercontent.com/63963025/168441279-cfbe35b4-e52b-4060-a5f9-4adca59797e4.png)
 
 
 
