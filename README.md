@@ -61,8 +61,7 @@ Amazon cloud computing resources are hosted in multiple locations world-wide. Th
 ![image](https://user-images.githubusercontent.com/63963025/168440401-2deea83a-a6db-4eca-945f-26d9619c8f69.png)
 
 - In network select mumbai VPC and allow http and https Traffic 
-![image](https://user-images.githubusercontent.com/63963025/168440848-27b02b00-d813-43f9-a9d9-235b0ec47198.png)
-
+![image](https://user-images.githubusercontent.com/63963025/168440876-8f2793ab-9db1-4153-8a5e-9ad03a47a5d6.png)
 
 ![image](https://user-images.githubusercontent.com/63963025/168440493-a0ec0f7a-3166-42c2-bf12-61fd5b7868af.png)
 
