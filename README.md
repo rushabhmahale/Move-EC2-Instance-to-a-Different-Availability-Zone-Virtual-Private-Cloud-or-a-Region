@@ -39,6 +39,7 @@ Amazon cloud computing resources are hosted in multiple locations world-wide. Th
 - Lets create another VPC in different region here iam using eu-west-1 (ireland) you can use different region as you wish 
 ![image](https://user-images.githubusercontent.com/63963025/168439736-99a606f7-ef15-41ed-977e-27bf88ad2ca9.png)
 
+## Step 2 Create a VPC in eu-west-1 (ireland) region
 - Create VPC
  ![image](https://user-images.githubusercontent.com/63963025/168439963-b5ed74e3-d5dc-4a69-bfbf-46f64b29e210.png)
 
@@ -50,6 +51,9 @@ Amazon cloud computing resources are hosted in multiple locations world-wide. Th
 
 - select IGW and go to Action --> Attach vpc --> ireland-vpc
 
+- Configure route table for ireland region 
+![image](https://user-images.githubusercontent.com/63963025/168442085-ad468a57-15a0-4bd9-95de-0949e6e1d619.png)
+ 
 - Go back to mumbai region create  Virtaul machine EC2 
 ![image](https://user-images.githubusercontent.com/63963025/168440206-44ebda1a-549d-4891-97c5-e09f114d3f97.png)
 ![image](https://user-images.githubusercontent.com/63963025/168440340-8ada85dd-57af-4af1-a338-40c821387aea.png)
@@ -90,6 +94,34 @@ Specify user data to provide commands or a command script to run when you launch
 
 - you should this kind of webapge 
 ![image](https://user-images.githubusercontent.com/63963025/168441279-cfbe35b4-e52b-4060-a5f9-4adca59797e4.png)
+
+## Step3 Moving EC2 Intnace to another region
+
+- Create an AMI (Amazon Machine Image) In GCP it is know as snapshot Right click there will be option call Image and template --> create image
+![image](https://user-images.githubusercontent.com/63963025/168441554-1f200ca6-4643-4c63-83d2-3d8b89b698d5.png)
+
+![image](https://user-images.githubusercontent.com/63963025/168441584-5a5423bb-fc79-4c22-9133-571c49805d25.png)
+
+- Here the image is been created 
+![image](https://user-images.githubusercontent.com/63963025/168441721-0f23aaf9-d40d-462f-80ea-e30e9ebe74fe.png)
+
+- Now lets share this iamge to another region Right click --> Copy AMI option
+
+![image](https://user-images.githubusercontent.com/63963025/168441749-551552c7-fd3d-45c3-8727-fddd86885958.png)
+
+- Select region ireland or where you want to share the AMI 
+![image](https://user-images.githubusercontent.com/63963025/168441788-0d69d8ca-9a29-48fc-9fc1-56e7e7b2211e.png)
+
+![image](https://user-images.githubusercontent.com/63963025/168441825-19f2b781-0d12-4be3-a04c-7a3f46bd118a.png)
+
+- Last step launch VM from that AMI 
+![image](https://user-images.githubusercontent.com/63963025/168441901-d8b3cef1-9955-42af-a984-089ccaa9b2c2.png)
+
+![image](https://user-images.githubusercontent.com/63963025/168441919-cfde7ac1-8b77-4478-ab06-f58ffd0641b4.png)
+
+- create a new key for this region
+- All default only change the VPC--> ireland-VPC--> Auto assign ip--> enable
+![image](https://user-images.githubusercontent.com/63963025/168441988-a0754700-d9b8-4d0f-b987-a43a82201355.png)
 
 
 
