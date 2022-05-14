@@ -123,7 +123,11 @@ Specify user data to provide commands or a command script to run when you launch
 - All default only change the VPC--> ireland-VPC--> Auto assign ip--> enable
 ![image](https://user-images.githubusercontent.com/63963025/168441988-a0754700-d9b8-4d0f-b987-a43a82201355.png)
 
+- ssh to your webserver and start httpd 
+![image](https://user-images.githubusercontent.com/63963025/168442365-6ce60e8e-caea-4746-8d5a-61832460a2e2.png)
 
+- copy the external ip and paste in to your browser 
+![image](https://user-images.githubusercontent.com/63963025/168442623-283f88c9-d039-4c08-9ec0-70d5bcd5abab.png)
 
-
-
+whats the purpose of Moving Ec2 instance  to be continued
+doc:- https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-options-in-the-cloud.html
