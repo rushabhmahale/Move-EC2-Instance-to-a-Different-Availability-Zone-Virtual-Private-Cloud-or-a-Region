@@ -19,6 +19,10 @@ Disaster recovery strategies available to you within AWS can be broadly categori
 ## Backup and restore
 Backup and restore is a suitable approach for mitigating against data loss or corruption. This approach can also be used to mitigate against a regional disaster by replicating data to other AWS Regions, or to mitigate lack of redundancy for workloads deployed to a single Availability Zone. 
 
+## Architecture diagram:-
+![moving ec2 region](https://user-images.githubusercontent.com/63963025/168459069-ed31c04f-6d52-4f95-b76a-1db7547b0ce2.png)
+
+
 ## Steps to be followed:- 
 
 ## Step1 Create a VPC in ap-south-1 (Mumbai) region 
