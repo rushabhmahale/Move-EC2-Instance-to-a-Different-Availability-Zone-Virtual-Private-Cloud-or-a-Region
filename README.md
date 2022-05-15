@@ -12,6 +12,13 @@ Amazon Virtual Private Cloud (Amazon VPC) enables you to launch AWS resources in
 Amazon cloud computing resources are hosted in multiple locations world-wide. These locations are composed of AWS Regions, Availability Zones, and Local Zones. Each AWS Region is a separate geographic area. Each AWS Region has multiple, isolated locations known as Availability Zones.
 - Refer to this link:- https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html
 
+## Whats the purpose to move resources one region to another region 
+Disaster recovery strategies available to you within AWS can be broadly categorized into four approaches, ranging from the low cost and low complexity of making backups to more complex strategies using multiple active Regions. Active/passive strategies use an active site (such as an AWS Region) to host the workload and serve traffic. The passive site (such as a different AWS Region) is used for recovery. The passive site does not actively serve traffic until a failover event is triggered.
+- Refer to this link:- https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-options-in-the-cloud.html
+
+## Backup and restore
+Backup and restore is a suitable approach for mitigating against data loss or corruption. This approach can also be used to mitigate against a regional disaster by replicating data to other AWS Regions, or to mitigate lack of redundancy for workloads deployed to a single Availability Zone. 
+
 ## Steps to be followed:- 
 
 ## Step1 Create a VPC in ap-south-1 (Mumbai) region 
@@ -129,5 +136,5 @@ Specify user data to provide commands or a command script to run when you launch
 - copy the external ip and paste in to your browser 
 ![image](https://user-images.githubusercontent.com/63963025/168442623-283f88c9-d039-4c08-9ec0-70d5bcd5abab.png)
 
-whats the purpose of Moving Ec2 instance  to be continued
-doc:- https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-options-in-the-cloud.html
+
+- For eg anything happen in the region deu some natural disaster or if our machine fails or due to some reason we have to change our location to another region so we are using this AMI strategy
